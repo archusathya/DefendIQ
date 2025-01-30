@@ -1,0 +1,93 @@
+.claimdetails-container {
+    display: flex;
+    height: 100vh;
+    background-color: #fcf9f9;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fcf9f9;
+    border-radius: 8px;
+    margin-left: 200px;
+    margin-top:50px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.claims-table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #b6d3e4;
+}
+
+.claims-table th, 
+.claims-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #4a94c5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures long text is truncated */
+    /* word-wrap: break-word; Wrap long words */
+    /* word-break: break-word; Break words when necessary */
+    white-space: normal;    /* Allow text to wrap to the next line */
+    max-width: 200px;       /* Set a reasonable max width */
+    overflow-wrap: break-word; /* Ensure compatibility */
+}
+
+.claims-table th {
+    background-color: #053756;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.claims-table .small-column {
+    width: 100px; /* Adjust width of smaller columns */
+}
+
+.claims-table td {
+    width:10px;
+    color: #070000;
+}
+
+tr:nth-child(odd) td {
+    background-color: #cbdde9; /* Light gray */
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #eef3f9; /* White */
+  }
+
+
+@media (max-width: 768px) {
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .claims-table {
+        font-size: 14px;
+    }
+
+    .claims-table th, 
+    .claims-table td {
+        padding: 8px;
+    }
+
+    .claims-table .small-column {
+        width: 80px; /* Reduce width further on small screens */
+    }
+}

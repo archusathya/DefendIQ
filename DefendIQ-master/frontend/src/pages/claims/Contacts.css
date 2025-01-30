@@ -1,0 +1,32 @@
+.contacts-container {
+  max-width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  background-color: #fcf9f9; /* Light background color */
+  border-radius: 8px;
+}
+
+.contacts-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Center the title */
+}
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contacts-table th,
+.contacts-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+contacts-table th {
+  background-color: #7c3647;
+}
+

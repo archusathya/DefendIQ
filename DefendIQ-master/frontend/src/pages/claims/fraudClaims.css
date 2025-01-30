@@ -1,0 +1,75 @@
+.fraud-claims-container {
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .active-tab {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .loader {
+    margin: 20px;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
+  
+  
+  .claim-section {
+    margin-bottom: 20px;
+  }
+  
+  .claim-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .overall-status {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+  }
+  
+  /* Style for anchor links in the documents section */
+.fraud-claims-container ul li a {
+  color: #2c4e4d; /* Primary blue color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: #ebebeb;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.fraud-claims-container ul li a:hover {
+  color: #fff; /* White text on hover */
+  background-color: #828181; /* Blue background on hover */
+}
+
+.fraud-claims-container ul li a:active {
+  background-color: #0056b3; /* Darker blue when clicked */
+}
+
+.fraud-claims-container ul li .genAI-link i{
+  padding-top: 15px;
+}
+
+.analysis-result h3
+{
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+.loss-details-container {
+    max-width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-color: #fcf9f9; /* Light background color */
+    border-radius: 8px;
+  }
+  
+
+.loss-details-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Center the title */
+}
+
+.incident-details {
+  display: grid;
+  grid-template-columns:2fr; /* Label and data layout */
+  grid-gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.incident-field {
+  font-size: 16px;
+  color: #444;
+}
+
+.incident-field strong {
+  font-weight: bold;
+  color: #000;
+}
+.incident-field p {
+    color: #000;
+}
+
+.detailed-report {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-style: italic; /* Italics for report section */
+}
+
+.detailed-report strong {
+  font-weight: bold;
+  color: #333;
+}
+

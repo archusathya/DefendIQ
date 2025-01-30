@@ -1,0 +1,48 @@
+.policy-information-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.policy-information-container .Sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #2C3E50;
+  color: white;
+  padding: 20px;
+  position: fixed; /* Keeps the sidebar fixed on scroll */
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* Content styling */
+.policy-content {
+  margin-left: 200px; /* Adjusts content to the right of the sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Ensures content does not overflow */
+}
+
+.policy-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2C3E50;
+  text-align: left;
+}
+
+.policy-details {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 0px;
+}
+
+.policy-details p {
+  margin: 10px 0;
+}
+
+.policy-details p strong {
+  color: #2C3E50;
+}

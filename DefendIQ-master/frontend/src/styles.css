@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.claimdetails-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Ensure the container takes the full height of the screen */
+}
+.claim-number {
+  font-size: 1.25rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #085654; /* Add a primary color */
+  margin-bottom: 10px; /* Add spacing below */
+  padding: 10px; /* Add padding around */
+  background-color: #ebebeb; /* Light blue background */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Make it inline but block-styled */
+}
+
+.claim-number span {
+  color: #5b1225; /* Highlight the claim number */
+}
+
+.link {
+  color: #034893;
+  text-decoration: none;
+}
+
+.claims-link {
+  color: #053756;
+  text-decoration: none;
+}
+
+
+.link:hover {
+  text-decoration: underline;
+}
+
+ header {
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.sidebar {
+  width: 180px;
+  background-color: #146660;
+  padding-top: 20px; /* Push the sidebar below the fixed header */
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100vh; /* Make sidebar full height */
+  top: 30px;
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ebebeb;
+}
+
+.sidebar ul li:hover {
+  background-color: #182a30;
+}
+
+.sidebar ul li i {
+  margin-right: 10px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 180px; /* Create space for the fixed sidebar */
+  overflow-y: auto; /* Add scrolling if content overflows */
+}
+
+.top-menu{
+  margin-top:38px;
+}
+
+.top-menu ul {
+  list-style: none;
+  display: flex;
+  border-bottom: 2px solid #dedede;
+  padding-bottom: 10px;
+}
+
+.top-menu ul li {
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  color: #034893;
+  cursor: pointer;
+}
+
+.top-menu ul li.active {
+  color: #2c4e4d;
+  border-bottom: 3px solid #182a30;
+}
+
+.top-menu ul li i {
+  margin-right: 5px;
+}
+
+.claim-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 100%;
+
+}
+
+.claim-details img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.details p {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+
+.detailed-report {
+  margin-top: 20px;
+}
+
+.detailed-report p {
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+.top-menu a {
+  display: block;
+  text-decoration: none;
+}
+
+.top-menu a:hover {
+  color: #182a30;
+}
+.sidebar a {
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+.sidebar a:hover {
+  color: #ebebeb;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+input:focus {
+  border-color: #7c3647;;
+  outline: none;
+}
+
+input,
+select {
+  margin-bottom: 12px;
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+select:focus {
+  border-color: #7c3647;;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: 1px;
+}
+textarea:focus {
+  border-color: #7c3647;;
+  outline: none;
+}
+
+/* Button enabled state */
+button:enabled {
+background-color: #146660;
+color: #fff;
+}
+
+/* Button disabled state */
+button:disabled {
+background-color: gray;
+color: #fff;
+cursor: not-allowed;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add space between the button and the table */
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Button Styling */
+.GenAI-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  margin-bottom: 20px; /* Add space between the button and the table */
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+  background-color: #003f7f; /* Even darker blue on click */
+  transform: scale(1); /* Reset scale on click */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue shadow when focused */
+}
+
+
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.assign-btn{
+  margin-left:8px;
+}
+
+.update-success {
+  color: green;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.update-error {
+  color: red;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+

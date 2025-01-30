@@ -1,0 +1,217 @@
+.assessment-button
+{
+  margin-bottom: 5px;
+  text-align: center;
+}
+.assessment-container {
+  max-width: 100%;
+  padding: 10px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  background-color: #fcf9f9; /* Light background color */
+  border-radius: 8px;
+  }
+  
+  .assessment-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Center the title */
+    margin-bottom:0px;
+  }
+  
+  .assessment-details {
+    display: grid;
+    grid-template-columns:2fr; /* Label and data layout */
+    grid-gap: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  .assessment-field {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .assessment-field strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+
+/* Tab container */
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #060505; /* Light border for a minimal look */
+}
+
+/* Tab button */
+.tabs button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333; /* Slightly darker text color for better contrast */
+  border-bottom: 2px solid transparent;
+  /* transition: color 0.3s ease, border-bottom 0.3s ease; */
+}
+
+/* Active tab */
+.tabs button.active-tab {
+  border-bottom: 2px solid #2c4e4d; /* Light blue color for the active tab */
+  color: #2c4e4d; /* Matching color with the border */
+}
+
+/* Hover effect for tabs */
+.tabs button:hover {
+  color: #5b1225; /* Soft blue hover effect */
+}
+
+/* Tab content */
+.tab-content {
+  max-width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  background-color: #fcf9f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.tab-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: normal; /* Normal font weight for simplicity */
+  color: #333; /* Consistent color */
+}
+
+.tab-content p {
+  margin: 8px 0;
+  color: #555; /* Softer gray for text */
+}
+
+/* Styling for lists (documents) */
+.tab-content ul {
+  list-style-type: none;
+  padding-left: 5px;
+  color: #555;
+}
+
+.tab-content li {
+  margin: 5px 0;
+}
+
+.selectAIassessment-Btn:enabled
+{
+  font-size: smaller;
+}
+
+.assessment-info-details {
+  display: grid;
+  grid-template-columns:2fr; /* Label and data layout */
+  grid-gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.assessment-info-details h2{
+  text-align: left;
+}
+
+.assessment-details-container {
+  width: 100%;
+  max-width: 800px; /* Set a max width for consistency */
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .assessment-details-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Center the title */
+  }
+
+  .assessment-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .assessment-form label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .assessment-form label strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .assessment-form input,
+  .assessment-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .estimated-cost-input
+   {
+    max-width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  
+  .assessment-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  } */
+  
+  .save-button,
+  .create-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+
+  
+  .create-button {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  
+  .message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+  }

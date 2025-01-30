@@ -1,0 +1,101 @@
+/* Center the login form on the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ebebeb; /* Light gray background for the whole page */
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px; /* Increased radius for a more rounded form */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  width: 100%;
+  max-width: 400px;
+}
+
+h2, h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2b2b2b; /* Darker heading color for contrast */
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #444;
+  font-weight: bold; /* Keep labels bold */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Softer border radius */
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #385a58; /* Matching focus color to the button theme */
+  outline: none;
+}
+
+.error-message {
+  color: #e63946; /* Red for error messages, consistent with the button colors */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Updated Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #0c6963, #697e7d); /* Gradient background */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px; /* Fully rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover and scaling */
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #697e7d, #384954); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight scale increase on hover for effect */
+}
+
+/* Register link */
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link p {
+  color: #2b2b2b; /* Dark gray text for the register link */
+}
+
+.register-link a {
+  color: #182a30;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}

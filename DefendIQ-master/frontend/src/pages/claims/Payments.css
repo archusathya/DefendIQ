@@ -1,0 +1,112 @@
+.payments-container {
+  max-width: 800px;
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;
+}
+
+.payments-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Center the title */
+}
+
+.payment-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Label and data layout */
+  grid-gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.payment-field {
+  font-size: 16px;
+  color: #444;
+}
+
+.payment-field strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.detailed-report {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-style: italic; /* Italics for report section */
+}
+
+.detailed-report strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #b6d3e4;
+  table-layout: fixed; /* Makes the table columns fixed-width */
+}
+
+.payments-table th, 
+.payments-table td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #4a94c5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensures long text is truncated */
+}
+
+.payments-table th {
+  background-color: #053756;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.payments-table .small-column {
+  width: 100px; /* Adjust width of smaller columns */
+}
+
+.payments-table td {
+  color: #070000;
+}
+
+/* Specify column widths */
+.payments-table th:nth-child(1), .claims-table td:nth-child(1) {
+  width: 5%; /* Adjust width for Payment ID */
+}
+
+.payments-table th:nth-child(2), .claims-table td:nth-child(2) {
+  width: 15%; /* Adjust width for Payee Name */
+}
+
+.payments-table th:nth-child(3), .claims-table td:nth-child(3) {
+  width: 10%; /* Adjust width for Check Amount */
+}
+
+.payments-table th:nth-child(4), .claims-table td:nth-child(4) {
+  width: 15%; /* Adjust width for Bank Name */
+}
+
+.payments-table th:nth-child(5), .claims-table td:nth-child(5) {
+  width: 15%; /* Adjust width for Branch Location */
+}
+
+.payments-table th:nth-child(6), .claims-table td:nth-child(6) {
+  width: 15%; /* Adjust width for Contact */
+}
+
+.payments-table th:nth-child(7), .claims-table td:nth-child(7) {
+  width: 25%; /* Adjust width for Status */
+}
+
+.reserve-amount
+{
+  margin-bottom: 10px;
+}
+

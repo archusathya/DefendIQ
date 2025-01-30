@@ -1,0 +1,11 @@
+.simple-footer {
+    position: fixed; /* Sticks the footer to the bottom of the viewport */
+    bottom: 0;
+    right: 500px;
+    padding: 0.5rem 1rem;
+    color: #333; /* White text color */
+    font-size: 0.8rem; /* Smaller font size */
+    text-align: center; /* Align text to the right */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+  }
+  

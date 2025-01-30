@@ -1,0 +1,92 @@
+/* Container for the form */
+.create-claim-container {
+    max-width: 800px;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-color: #fcf9f9; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 35px;
+  }
+  
+  .create-claim-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Center the title */
+  }
+  
+  
+  
+  /* Form input fields */
+  .create-claim-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Change border color on focus */
+  .create-claim-container form input:focus {
+    border-color: #D95A2B;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .create-claim-container form button {
+    background-color: #F57720;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effects for buttons */
+  .create-claim-container form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .create-claim-container form button:active {
+    background-color: #003f7f;
+    transform: scale(1);
+  }
+  
+  /* Ensure the back button has consistent styling */
+  .create-claim-container form button:nth-child(2) {
+    background-color: #6c757d;
+  }
+  
+  .create-claim-container form button:nth-child(2):hover {
+    background-color: #5a6268;
+  }
+  
+  .create-claim-container form button:nth-child(2):active {
+    background-color: #545b62;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .create-claim-container {
+      padding: 15px;
+    }
+    .create-claim-container h2 {
+      font-size: 20px;
+    }
+    .create-claim-container form input {
+      padding: 8px;
+    }
+    .create-claim-container form button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

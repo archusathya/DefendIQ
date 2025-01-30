@@ -1,0 +1,61 @@
+
+  
+  .close-claim-header {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .close-claim-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 100px;
+    width:500px;
+  }
+  
+  .form-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:150px;
+  }
+  
+  .close-claim-success {
+    color: green;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .close-claim-error {
+    color: red;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,31 @@
+
+
+.left-section {
+  background-color: #fcf9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.left-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-section p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* Styling for the logged-in user container */
+.loggedUser {
+    position: fixed; /* Keeps it fixed at the top-right of the page */
+    top: 15px; /* Adds spacing from the top */
+    right: 20px; /* Adds spacing from the right */
+    padding: 10px 15px; /* Adds internal spacing for a cleaner look */
+    font-size: 1rem; /* Standard font size */
+    color: #333; /* Neutral text color */
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds space between the icon and text */
+  }
+  
+  /* Styling for the icon */
+  .loggedUser i.material-icons {
+    font-size: 1.2rem; /* Adjust the size of the icon */
+    color: #555; /* Slightly darker icon color */
+  }
+  
+  /* Styling for the list */
+  .loggedUser ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullets */
+  }
+  
+  .loggedUser li {
+    display: flex; /* Ensure text and icon stay in one row */
+    align-items: center; /* Vertically align text with the icon */
+  }
+  

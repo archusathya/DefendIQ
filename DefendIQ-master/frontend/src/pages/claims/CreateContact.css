@@ -1,0 +1,51 @@
+/* Container for the form */
+.create-contact-container {
+  width: 100%;
+  max-width: 600px; /* Set a max width for consistency */
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .create-contacts-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left; /* Center the title */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Form input fields */
+  .create-contact-container form input {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .create-contact-container {
+      padding: 15px;
+    }
+    .create-contact-container h2 {
+      font-size: 20px;
+    }
+    .create-contact-container form input {
+      padding: 8px;
+    }
+    .create-contact-container form button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
