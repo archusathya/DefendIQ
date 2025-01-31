@@ -1,11 +1,8 @@
-Below is a detailed YAML workflow file based on the given conditions:
-
-```yaml
 name: Custom Workflow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
       - main
