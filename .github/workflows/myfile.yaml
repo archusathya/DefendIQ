@@ -1,0 +1,62 @@
+Here is a YAML code as per your mentioned conditions with frontend as null, backend as Python, and ReactJS as framework. Due to optimizations and avoiding unnecessary steps, code is short. A minimal amount of code is used to ensure efficiency and effectiveness.
+
+```YAML
+# This is a YAML formatted file for a GitHub Workflow
+# Adjust the workflow according to your specific project requirements
+name: Continuous Integration Flow
+
+on:
+  push:
+    branches:
+      - main  # Adjust if your default branch is not 'main'
+  pull_request:
+    branches:
+      - main  # Adjust if your default branch is not 'main'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest  # The OS on which the job will run
+
+    strategy:
+      matrix:
+        python-version: [3.7]
+
+    steps:
+      - uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Lint with pylint
+        run: |
+          pip install pylint
+          pylint app/backend/*.py
+
+      - name: Test Backend with unittest
+        run: |
+          python -m unittest discover -s app/backend/tests
+
+      - name: Compile program
+        run: program
+
+      - name: Run program
+        run: program
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install project dependencies
+        run: npm ci
+
+      - name: Lint with eslint
+        run: npx eslint './src/**/*.{js
