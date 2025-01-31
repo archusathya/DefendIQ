@@ -1,0 +1,66 @@
+Below is a detailed YAML workflow file based on the given conditions:
+
+```yaml
+name: Custom Workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tech_identification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check frontend
+        run: |
+          if [ -z "$FRONTEND" ]; then
+            echo "Frontend is null";
+          else
+            echo "Frontend is $FRONTEND";
+          fi
+      - name: Check backend
+        run: |
+          if [[ "$BACKEND" == "Python" ]]; then
+            echo "Backend is Python";
+            python3 --version
+            
+            # Ensure that the installed Python version is used
+            echo "PYTHON_PATH=$(which python3)" >> $GITHUB_ENV
+          else
+            echo "Backend is not Python";
+          fi
+      - name: Check framework
+        run: |
+          if [[ "$FRAMEWORK" == "ReactJS" ]]; then
+            echo "Framework is ReactJS";
+            
+            # Specify the React JS version here, or use the default one
+            npm view react version
+          else
+            echo "Framework is not ReactJS";
+          fi
+
+  build:
+    needs: tech_identification
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Compile program
+        run: make
+      - name: Run program
+        run: ./program
+
+  check_version:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Python version
+        id: get-python-version
+        run: echo ::set-output name=version::$(python -V 2
