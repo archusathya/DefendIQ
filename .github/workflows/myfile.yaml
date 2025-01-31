@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: windows  # The OS on which the job will run
+    runs-on: Ubuntu  # The OS on which the job will run
 
     strategy:
       matrix:
