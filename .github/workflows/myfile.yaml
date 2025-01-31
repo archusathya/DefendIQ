@@ -11,11 +11,11 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest  # The OS on which the job will run
+    runs-on: linux  # The OS on which the job will run
 
     strategy:
       matrix:
-        python-version: [3.7.1]
+        python-version: [3.12.5]
 
     steps:
       - uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE
