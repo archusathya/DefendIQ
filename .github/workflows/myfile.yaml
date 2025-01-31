@@ -24,7 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip  # Upgrade pip
-        pip install flask     # Install dependencies from 'requirements.txt'
+        pip install flask  # Install Flask as a basic example dependency
+        pip install flask_cors  # Install flask_cors to resolve the ModuleNotFoundError
 
     - name: Run Python application
       run: |
