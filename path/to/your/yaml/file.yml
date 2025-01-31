@@ -1,0 +1,70 @@
+Here is an example of a YAML file for a GitHub Actions workflow. This particular file is built for a Python backend with ReactJS frontend, running on Ubuntu OS. The program compilation and running are expressed as steps within the build job, and the workflow monitors push and pull requests to the 'main' branch of your repository.
+
+```yaml
+name: Main Workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      # Python setup
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      # Install Python Dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Install JS Dependencies
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.1
+        with:
+          node-version: '14'
+
+      - name: Install npm dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Compile program
+        run: npm run build
+        working-directory: ./frontend
+
+      - name: Run program
+        run: python manage.py runserver
+
+      # Tests
+      - name: Python tests
+        run: |
+          pytest
+
+      - name: Javascript tests
+        run: |
+          cd frontend
+          npm test
+          
+      # Version Information
+      - name: Version Details
+        run: |
+          echo "Python version $(python --version)"
+          echo "Node.js version $(node --version)"
+          echo "NPM version $(npm --version)"
+          echo "ReactJS version $(npm list react)"
+```
+
+This
