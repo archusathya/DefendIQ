@@ -1,17 +1,12 @@
-Here is a YAML code as per your mentioned conditions with frontend as null, backend as Python, and ReactJS as framework. Due to optimizations and avoiding unnecessary steps, code is short. A minimal amount of code is used to ensure efficiency and effectiveness.
-
-```YAML
-# This is a YAML formatted file for a GitHub Workflow
-# Adjust the workflow according to your specific project requirements
 name: Continuous Integration Flow
 
 on:
   push:
     branches:
-      - main  # Adjust if your default branch is not 'main'
+      - master  # Adjust if your default branch is not 'main'
   pull_request:
     branches:
-      - main  # Adjust if your default branch is not 'main'
+      - master  # Adjust if your default branch is not 'main'
 
 jobs:
   build:
