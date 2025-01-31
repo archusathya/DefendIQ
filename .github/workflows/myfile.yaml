@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Python application
       run: |
-        python app.py  # Replace with the name of your Python script
+        python backend/app.py  # Replace with the name of your Python script
 
 
 
